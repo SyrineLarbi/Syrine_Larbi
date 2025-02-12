@@ -11,6 +11,15 @@
     
 
     <title>Syrine Larbi</title>
+    <!-- Email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "3-eC-hcLHrglB5pQR",
+            });
+        })();
+    </script> 
     <link rel="shortcut icon" type="image/x-icon" href="./images/s.png">
 
     <!-- Additional CSS Files -->
@@ -313,10 +322,10 @@
                                     <div class="col-md-6 animate" data-animate="fadeInUp">
                                         <form id="ajax-contact" method="post" action="#"  onsubmit="sendEmail(); reset(); return false">
                                             <div class="input-field">
-                                                <input type="text" class="form-control" name="name" id="name" required placeholder="Name">
+                                                <input type="text" class="form-control" name="name" id="fullname" required placeholder="Name">
                                             </div>
                                             <div class="input-field">
-                                                <input type="email" class="form-control" name="email" id="email" required placeholder="Email">
+                                                <input type="email" class="form-control" name="email" id="email_id" required placeholder="Email">
                                             </div>
                                             <div class="input-field">
                                                 <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
